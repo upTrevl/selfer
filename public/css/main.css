@@ -1,0 +1,227 @@
+@-webkit-keyframes swing {
+  15% {
+    -webkit-transform: translateY(9px);
+    transform: translateY(9px);
+  }
+  30% {
+    -webkit-transform: translateY(-9px);
+    transform: translateY(-9px);
+  }
+  40% {
+    -webkit-transform: translateY(6px);
+    transform: translateY(6px);
+  }
+  50% {
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px);
+  }
+  65% {
+    -webkit-transform: translateY(3px);
+    transform: translateY(3px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+ 
+@keyframes swing {
+  15% {
+    -webkit-transform: translateY(9px);
+    transform: translateY(9px);
+  }
+  30% {
+    -webkit-transform: translateY(-9px);
+    transform: translateY(-9px);
+  }
+  40% {
+    -webkit-transform: translateY(6px);
+    transform: translateY(6px);
+  }
+  50% {
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px);
+  }
+  65% {
+    -webkit-transform: translateY(3px);
+    transform: translateY(3px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+@font-face {
+    font-family: CenturyGothic; /* Имя шрифта */
+    src: url(fonts/GOTHIC.ttf); /* Путь к файлу со шрифтом */
+
+  }
+
+ body{
+ 	color:#373737;
+ 	font-family: CenturyGothic, AppleGothic, sans-serif;
+	font-size: 20px;
+	font-style: normal;
+	font-variant: normal;
+	
+ }
+
+.header {
+	width: 100%;
+	background-color:#1d1f27;
+	z-index: -1;
+}
+.nav{
+	float:left;
+	margin-right: 200px;
+	margin-left: 30%;
+
+}
+.nav a {  
+	padding-top:15px; 	
+	color:#fff;
+	background-color:#1d1f27;
+	border:0;
+	width: 100px;
+	height: 66px;	
+
+}
+.nav a:hover {
+	text-decoration: none;
+	background-color:#535560;
+
+}
+.login {
+	float:left;
+        margin-top: 20px;
+}
+.buttonStyle{	
+	color:#fff;
+	background-color:#1d1f27;	
+	min-width: 100px;	
+	border-radius: 5px 5px 5px 5px;
+	border-color:#fff; 	
+	border:1px solid #ffffff;
+	margin-right: 10px;
+    padding: 4px;
+}
+.buttonStyle:hover {
+        text-decoration: none;
+        color:#fff;
+	background-color:#535560;
+
+}
+#undernav{
+	margin-top: 0px;	
+	border: none; /* Убираем границу */
+    background-color: #535560; /* Цвет линии */
+    color: red; /* Цвет линии для IE6-7 */
+    height: 2px; /* Толщина линии */
+	width:70%; 
+}
+#underbrandname{
+	margin-top: -45px;
+	float:Left;
+	border: none; /* Убираем границу */
+    background-color: #535560; /* Цвет линии */
+    color: red; /* Цвет линии для IE6-7 */
+    height: 2px; /* Толщина линии */	
+	margin-left: 35%;
+	width:32%; 
+
+}
+.intro{	
+	float:left;
+
+}
+.brandname{
+	color: #fff;
+	font-size: 10em	;	
+}
+.SmallBrandname{
+	color: #fff;
+	font-size: 2.2em;
+}
+.slogan{
+	margin-top: -45px;	
+	color:#cccaca;
+	font-size: 17px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 20px;
+
+}
+.downbutton{	
+	margin-top:15%;	
+	margin-bottom:30px;
+}
+.swing:hover {
+  	-webkit-animation: swing 0.6s ease;
+  	animation: swing 0.6s ease;
+   	-webkit-animation-iteration-count: 1;
+  	animation-iteration-count: 1;
+}
+.content{
+	margin-top:20px;
+}
+.JoinUs{
+	background: url(../images/joinUsBG.png);
+	padding-top:350px;
+	color: #fff;
+}
+.bigbtn{
+	font-size:2em ;
+	height: 60px;
+}
+footer{
+	color:#fff;
+	min-height: 200px;
+	background-color:#1d1f27;
+}
+.CommentBody{
+	background-color: #bfccff;
+	width: 100%;
+	margin:10px;
+	padding:10px;
+	border-radius: 10px;
+}
+.CommentContent{
+	background-color: #f7f7f7;
+	border-radius: 10px;
+	padding: 10px;
+}
+.dropMenu ul{
+	padding:10px;
+}
+.dropMenu{	
+	margin-top:14px;
+	position: absolute;
+	background-color: #dedede;
+	z-index:9999;		
+}
+.dropMenu li{
+	padding: 2px 15px 2px 0px;
+ 	list-style-type: none;
+}
+.ProfileUser .dropMenu a{
+	font-size: 0.7em;
+	color:#1d1f27;
+}
+.ProfileUser .dropMenu a:hover{
+	font-size: 0.7em;
+	color:#aaa;
+
+}
+.ProfileUser {
+	padding-top:13px; 
+	font-size: 1.3em;
+}
+.ProfileUser a{
+	
+	color:#fff;
+	text-decoration: none;
+}
+.ProfileUser a:hover{
+	color:#d6d6d6;
+}

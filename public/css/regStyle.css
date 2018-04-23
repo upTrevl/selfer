@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+.logoShow{
+	color:#fff;
+	background-color:#1d1f27 ;
+	height: 100%;
+	padding-top:25%;		
+}
+.logoShow span{
+	font-size:20em;
+}	
+.regForm{
+	font-family: 'Ubuntu', sans-serif;
+	padding-top: 20%;
+	height: 100vh;
+	font-size: 2em;
+}
+.form-control {
+	font-size: 1.1em;
+}
+.regform .panel{
+
+	height: 100vh;
+}
+.backBlack{	
+	text-decoration: none;
+	color: #1d1f27;	
+}
+.backBlack:hover{
+	text-decoration: none;
+	color:#535560;
+}
+.buttonStyle{	
+	color:#fff;
+	background-color:#1d1f27;	
+	min-width: 100px;	
+	border-radius: 5px 5px 5px 5px;
+	border-color:#fff; 	
+	border:1px solid #ffffff;
+	margin-right: 10px;
+    padding: 5px;
+}
+.buttonStyle:hover {
+    text-decoration: none;
+    color:#fff;
+	background-color:#535560;
+
+}
