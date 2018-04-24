@@ -225,3 +225,18 @@ footer{
 .ProfileUser a:hover{
 	color:#d6d6d6;
 }
+.profileContainer{
+	margin-top: 40px;
+	margin-bottom: 60px;
+}
+.profileBody{
+	min-height: 400px;
+	background-color:#ededed;
+}
+.taskBody{
+	min-height: 400px;
+	background-color:#e8e8e8;
+}
+.avaPlace{
+	padding: 30px;
+}

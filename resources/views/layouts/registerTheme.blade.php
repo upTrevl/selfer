@@ -21,7 +21,7 @@
     </script>
 
     <script type="text/javascript" src="/js/wow.min.js"></script>
-      <script type="text/javascript" src="/js/jquery-3.3.1.js"></script>
+     <script type="text/javascript" src="/js/jquery-3.3.1.js"></script>
     <link rel="stylesheet" href="/css/animate.css">
 
 	

@@ -16,3 +16,4 @@ Route::get('/comm','CommentsCtrl@comment');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
+Route::get('/profileChange','ProfileController@change');

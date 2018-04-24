@@ -22,6 +22,7 @@
 
     <script type="text/javascript" src="/js/wow.min.js"></script>
     <script type="text/javascript" src="/js/jquery-3.3.1.js"></script>
+
     <link rel="stylesheet" href="/css/animate.css">
 	
 	<link  href="{{ asset ('css/bootstrap.css')}}" rel="stylesheet">	
@@ -47,17 +48,17 @@
                     @else
                     <div class="ProfileUser">
                         <a href="#"  onclick="down()">
-                            {{ Auth::user()->name }} <img src="/icons/line-menu.png" alt="Назад" width="35px" height="35px"> 
+                            {{ Auth::user()->name }} <img src="/icons/line-menu.png" alt="Назад" width="30px" height="30px"> 
                         </a>                       
-                        <div class="dropMenu animated wow slideInDown">
+                        <div class="dropMenu animated wow " data-wow-duration="0.5s"  data-wow-offset="200" >
                             <ul  id="dropdown" style="display:none">
-                               <li ><a href="\home"> <img src="/icons/man.png" width="35px" height="35px"> Профиль</a></li>
-                               <li ><a href="#"><img src="/icons/list.png" width="35px" height="35px"> Мои задачи</a></li>
-                               <li ><a href="#"><img src="/icons/coin.png" width="35px" height="35px"> Очки</a></li>
+                               <li ><a href="\home"> <img src="/icons/man.png" width="23px" height="23px"> Профиль</a></li>
+                               <li ><a href="#"><img src="/icons/list.png" width="23px" height="23px"> Мои задачи</a></li>
+                               <li ><a href="#"><img src="/icons/coin.png" width="23px" height="23px"> Очки</a></li>
                                <li ><a href="{{ url('/logout') }}"
                                                 onclick="event.preventDefault();
                                                          document.getElementById('logout-form').submit();">
-                                                <img src="/icons/exit.png"width="35px" height="35px"> Выход
+                                                <img src="/icons/exit.png" width="23px" height="23px"> Выход
                                     </a>
 
                                     <form id="logout-form" action="{{ url('/logout') }}" method="POST" style="display: none;">
@@ -82,16 +83,34 @@
 	<footer>
 		<h2>Футер тут хня всякая</h2>
 	</footer>
+    
     <script type="text/javascript">
+        jQuery(document).ready(function($) {
+            new WOW().init();
+            });
+
         function down()
         {
           var a = document.getElementById('dropdown');
-          if ( a.style.display == 'none' )
-            a.style.display = 'block'
+          var b = a.parentNode;
+          if ( a.style.display == 'none' ){
+            a.style.display = 'block'; 
+
+            b.className = "dropMenu animated wow slideInDown";
+          }
+            
           else
-            if ( a.style.display == 'block' )
-            a.style.display = 'none';
+            if ( a.style.display == 'block' ){
+               b.className = "dropMenu animated wow slideOutUp";
+                
+                setTimeout(func, 400);
+            }
+            
+            function func() {
+              a.style.display = 'none'; 
+            }
         };
+
 </script>
 </body>
 </html>
